@@ -1,0 +1,129 @@
+.hero {
+    background-color: #f8f8f8;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .search-bar {
+    display: flex;
+  }
+  
+  .search-bar input {
+    padding: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+  }
+  
+  .search-bar button {
+    background-color: #FF5733;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #E64A19;
+  }
+  
+  .hero-image img {
+    margin-top: 30px;
+    margin: 20px;
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+  }
+
+  .auth-buttons {
+    margin-top: 20px;
+  }
+  
+  .auth-buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .register-button {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  .login-button:hover {
+    background-color: #367C39;
+  }
+  
+  .register-button:hover {
+    background-color: #00688B;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image img {
+      max-width: 300px;
+      margin-top: 30px;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+    }
+  
+    .search-bar input {
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .search-bar button {
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .auth-buttons {
+        margin-top: 20px;
+      }
+    
+      .auth-buttons button {
+        width: 45%;
+        margin-bottom: 10px;
+      }
+  }
