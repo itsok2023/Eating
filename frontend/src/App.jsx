@@ -6,17 +6,25 @@ import Home from './pages/Home'
 import './App.css'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
+    <>
+    {" "}
+    <BrowserRouter>
     <div>
-      {/* <Login></Login> */}
-      <Navbar></Navbar>
-      {/* <Register></Register> */}
-      {/* <About></About> */}
-      <Contact></Contact>
-      {/* <Home></Home> */}
+        <Navbar></Navbar>
+        <Routes>
+              <Route exact path='/' element={<Home></Home>}></Route>
+              <Route path="/about" element={<About/>}></Route>
+              <Route path="/login" element={<Login/>}></Route>
+              <Route path="/register" element={<Register/>}></Route>
+              <Route path="/contact" element={<Contact/>}></Route>
+      </Routes>
     </div>
+    </BrowserRouter>
+    </>
   )
 }
 
